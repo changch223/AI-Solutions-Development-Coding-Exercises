@@ -1,0 +1,2 @@
+CREATE DATABASE superstore_db;
+SHOW DATABASES;

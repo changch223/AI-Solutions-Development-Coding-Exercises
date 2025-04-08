@@ -1,0 +1,189 @@
+*******************************************************************************************************************
+Install HIVE
+***********************************************************************************************************
+
+sudo apt-get update
+
+wget http://archive.apache.org/dist/hive/hive-3.1.2/apache-hive-3.1.2-bin.tar.gz
+tar -xzf  apache-hive-3.1.2-bin.tar.gz
+
+
+sudo mv apache-hive-3.1.2-bin /usr/local/hive
+ls /usr/local
+
+
+nano .bashrc
+
+**append following between configuration bucket
+
+
+#Hadoop Path
+export HADOOP_HOME=/usr/local/hadoop
+export PATH=$PATH:$HADOOP_HOME/bin
+export PATH=$PATH:$HADOOP_HOME/sbin
+export HADOOP_MAPRED_HOME=${HADOOP_HOME}
+export HADOOP_COMMON_HOME=${HADOOP_HOME}
+export HADOOP_HDFS_HOME=${HADOOP_HOME}
+export YARN_HOME=${HADOOP_HOME}
+
+#Hive configurations
+export HIVE_HOME=/usr/local/hive
+export PATH=$PATH:$HIVE_HOME/bin
+export HIVE_CONF_DIR=$HIVE_HOME/conf
+export CLASSPATH=$CLASSPATH:$HADOOP_HOME/lib/*:.
+export CLASSPATH=$CLASSPATH:$HIVE_HOME/lib/*:.
+
+
+**end of append, ctr+s and ctrl+x to save and exit
+
+source .bashrc
+
+
+cd $HIVE_HOME
+cd conf
+ls
+sudo cp hive-env.sh.template hive-env.sh
+sudo nano hive-env.sh
+
+
+
+***search (f6) HADOOP_HOME AND remove the # and replace following
+HADOOP_HOME=/usr/local/hadoop
+
+
+sudo cp hive-default.xml.template hive-site.xml
+sudo nano hive-site.xml
+
+****append following into first config
+
+  <property>
+    <name>system:java.io.tmpdir</name>
+    <value>/tmp/hive/java</value>
+  </property>
+  <property>
+    <name>system:user.name</name>
+    <value>${user.name}</value>
+  </property>
+** end of append m ctrl+s and ctrl+x to save and exit
+
+
+
+hadoop fs -mkdir -p /user/hive/warehouse
+hadoop fs -chmod g+w /user/hive/warehouse
+
+
+
+***inatlize derby as hive metastore
+cd $HIVE_HOME
+cd conf
+
+***remove the illegal character in hive-site.xml
+sudo nano hive-site.xml
+***search for "Ensures commands with OVERWRITE" and remove the invalid characters between for and transactional, ctrl+s and ctrl+x to save and exit
+
+
+cd ..
+cd bin
+ls
+cd ..
+
+
+bin/schematool -dbType derby -initSchema
+*****WAIT FOR THE PROMPT schemaTool completed
+
+ls
+****now you should see metastoredb
+*******************************************************************************************************************
+test HIVE
+*******************************************************************************************************************
+
+
+hive
+***should see prompt
+exit;
+
+*******************************************************************************************************************
+now work for beeline
+
+The primary difference between HIVE and Beeline is how the clients connect to Hive. 
+The Hive CLI, which connects directly to HDFS and the Hive Metastore, and can be used only on a host with access to those services. 
+Beeline, which connects to HiveServer2 and requires access to only one .
+*******************************************************************************************************************
+
+cd $HIVE_HOME/conf
+sudo nano hive-site.xml
+*****look for JDBC:derby (f6 or contrl+w, update following , ctrl+s , ctrl+x to save and exit
+provide full path to metastore.db
+databasename=/usr/local/hive/metastore_db
+
+********
+*******************************************************************************************************************
+TEST beeline
+*******************************************************************************************************************
+***********************************************************************************************************
+
+beeline -u jdbc:hive2://
+
+show databases;
+
+!q
+*******************************************************************************************************************
+Install PIG
+*******************************************************************************************************************
+
+
+cd ~
+wget https://dlcdn.apache.org/pig/pig-0.16.0/pig-0.16.0.tar.gz
+tar xvzf pig-0.16.0.tar.gz
+
+
+sudo mv pig-0.16.0 /usr/local/hadoop/pig
+nano .bashrc
+**append following 
+
+
+#PIG settings
+export PIG_HOME=/usr/local/hadoop/pig
+export PATH=$PATH:$PIG_HOME/bin
+export PIG_CLASSPATH=$PIG_HOME/conf:$HADOOP_INSTALL/etc/hadoop/
+export PIG_CONF_DIR=$PIG_HOME/conf
+export PIG_CLASSPATH=$PIG_CONF_DIR:$PATH
+#PIG setting ends
+
+
+source .bashrc
+
+stop-dfs.sh
+start-dfs.sh
+stop-yarn.sh
+start-yarn.sh
+jps
+
+*******************************************************************************************************************
+Install Zeppelin
+*******************************************************************************************************************
+
+
+cd ~
+wget https://dlcdn.apache.org/zeppelin/zeppelin-0.10.1/zeppelin-0.10.1-bin-all.tgz
+tar -xzvf zeppelin-0.10.1-bin-all.tgz
+
+nano .bashrc
+
+**append following
+
+## zeppelin settings
+export ZEPPELIN_HOME=/usr/local/zeppelin
+**end of append , ctrl+s, ctrl+x to save and exit
+
+
+source .bashrc
+
+sudo mv zeppelin-0.10.1-bin-all "$ZEPPELIN_HOME"
+cd "$ZEPPELIN_HOME"
+bin/zeppelin-daemon.sh start
+**wait for the ok and then RDC to ubuntu vm and open zeppelin page 
+
+
+Zeppelin -> http://localhost:8080/
+

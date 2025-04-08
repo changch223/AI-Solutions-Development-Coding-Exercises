@@ -1,0 +1,238 @@
+az login
+**Choose your subscription or tenant
+**Azure user:Your user name
+
+
+*************************************************************
+**1.	Create a Resource Group
+*************************************************************
+az group create --name trainingrg --location eastus --tags Name=Soosan Environment=Training
+
+
+*************************************************************
+**2.	Create SSH Key and use the same to Create Virtual machine
+*************************************************************
+ssh-keygen -m PEM -t rsa -b 2048
+**press enter for default filename/provide no passphrase for clarity
+
+az vm create --resource-group trainingrg --name MyUbuntu --image Ubuntu2204  --admin-username azuresoosan --size Standard_F8s --ssh-key-value ~/.ssh/id_rsa.pub
+
+
+*************************************************************
+**3.	Install Web Server
+*************************************************************
+az vm run-command invoke -g trainingrg -n MyUbuntu  --command-id RunShellScript  --scripts "sudo apt-get update && sudo apt-get install -y nginx"
+
+*************************************************************
+**4.	Open port 80 for web traffic
+*************************************************************
+az vm open-port --port 80 --resource-group trainingrg --name MyUbuntu
+
+-------------------------------------------------------------
+***to Test Goto Browser and type ip address :80
+**Your IP Adrress:80
+***you should see "Welcome to nginx!"
+***- it may take a few minutes for the first time !
+-------------------------------------------------------------
+
+*************************************************************
+**5.  Create a Network Security Group rule for Remote Desktop traffic
+*************************************************************
+az vm open-port --resource-group trainingrg --name MyUbuntu --port 3389  --priority 1100
+
+*************************************************************
+**6.	Connect to VM through SSH
+*************************************************************
+
+ssh your-azure-user-name@your-IP-address
+
+
+-------------------------------------------------------------
+**you should see 
+azureuser@myVM:~$
+-------------------------------------------------------------
+
+*************************************************************
+**7.  Install desktop environment
+*************************************************************
+sudo apt-get update
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y install xfce4
+sudo apt install xfce4-session
+
+
+*************************************************************
+**8.  Install and configure a remote desktop server
+*************************************************************
+sudo apt-get -y install xrdp
+sudo systemctl enable xrdp
+
+
+*************************************************************
+**9.  on Ubuntu 20, you will need to give certificate access to an xrdp user
+*************************************************************
+sudo adduser xrdp ssl-cert
+echo xfce4-session >~/.xsession
+sudo service xrdp restart
+
+
+
+*************************************************************
+**10.  set local password 
+*************************************************************
+sudo passwd azureuser
+
+(Provide a password, no special characters , only upper and lower cases ) 
+
+
+
+11.  Install Google Chrome on the VM
+*************************************************************
+-------------------------------------------------------------
+
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
+
+
+-------------------------------------------------------------
+*************************************************************
+**11. Install JAVA AND CONFIGURE PROFILE 
+*************************************************************
+-------------------------------------------------------------
+
+
+
+sudo apt update
+sudo apt install openjdk-8-jdk
+java -version
+whereis java
+
+nano .profile
+
+
+****append following
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+export HADOOP_HOME="/usr/local/hadoop"
+****end of append
+****click on Ctrl+S and Ctrl+X to save , exit
+
+
+source .profile
+echo $JAVA_HOME
+echo $HADOOP_HOME
+
+
+*******************************************************************************************************************
+*******************************************************************************************************************
+*******************************************************************************************************************
+Install HADOOP 
+Configuring a pseudo-distributed cluster
+*******************************************************************************************************************
+*******************************************************************************************************************
+*******************************************************************************************************************
+*******************************************************************************************************************
+
+
+wget https://archive.apache.org/dist/hadoop/common/hadoop-3.3.3/hadoop-3.3.3.tar.gz
+(if above site is down then pick any mirror site for the same version)
+
+tar -xzvf hadoop-3.3.3.tar.gz
+sudo mv hadoop-3.3.3 "$HADOOP_HOME"
+
+echo "export PATH=\"\$PATH:\$HADOOP_HOME/bin\"" >> $HOME/.profile
+
+nano .profile
+**verify  HADOOP_HOME/bin IN PATH..Ctrl+x to exit
+source .profile 
+
+
+*******************************************************************************************************************
+*******************************************************************************************************************
+*******************************************************************************************************************
+TEST HADOOP
+*******************************************************************************************************************
+*******************************************************************************************************************
+*******************************************************************************************************************
+
+hadoop
+
+***hadoop is running if you can see hadoop commands and SUBCOMMANDS
+
+-------------------------------------------------------------
+*************************************************************
+**12. Configure hadoop
+*************************************************************
+-------------------------------------------------------------
+sudo nano "$HADOOP_HOME/etc/hadoop/core-site.xml"
+
+**append following between configuration bucket
+	
+ <property>
+    <name>fs.defaultFS</name>
+    <value>hdfs://localhost:9000</value>
+  </property>
+
+**end of append , Ctrl+S AND Ctrl+X to save and exit
+
+
+sudo nano "$HADOOP_HOME/etc/hadoop/hdfs-site.xml"
+
+**append following between configuration bucket
+
+  <property>
+    <name>dfs.replication</name>
+    <value>1</value>
+  </property>
+
+**end of append , Ctrl+S AND Ctrl+X to save and exit
+
+***now setup ssh key for localhost
+	
+ssh-keygen
+**just press enter for everything default
+cat $HOME/.ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
+chmod 600 $HOME/.ssh/authorized_keys
+
+ssh localhost
+exit
+
+************************************************************************
+Your identification has been saved in /home/101587635/.ssh/id_rsa
+Your public key has been saved in /home/101587635/.ssh/id_rsa.pub
+*****************************************************************
+
+sudo chown -R "$(whoami):" "$HADOOP_HOME"
+hdfs namenode -format
+
+echo "export PATH=\"\$PATH:\$HADOOP_HOME/sbin\"" >> $HOME/.profile
+source $HOME/.profile
+
+
+
+echo "export JAVA_HOME=\"/usr/lib/jvm/java-8-openjdk-amd64\"" >> "$HADOOP_HOME/etc/hadoop/hadoop-env.sh"
+nano "$HADOOP_HOME/etc/hadoop/hadoop-env.sh"
+(go to end and verify ...JAVA_HOME... and ctrl+x)
+
+***now start all deamons
+start-dfs.sh
+start-yarn.sh
+jps
+
+-------------------------------------------------------------
+*************************************************************
+**following services should be running
+NodeManager
+NameNode
+Jps
+SecondaryNameNode
+ResourceManager
+DataNode
+
+
+also, trye following links from your VM (using RDP)
+
+Resource Manager  -->http://localhost:8088 
+Hadoop GUI -->http://localhost:9870
+Hadoop FileSystem -->http://localhost:9870/explorer.html#/
+*************************************************************
+-------------------------------------------------------------
+

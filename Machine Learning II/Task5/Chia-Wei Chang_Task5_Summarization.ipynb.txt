@@ -1,0 +1,43 @@
+Way beyond your age.” Tanishi never takes NO for an answer.
+“Papa, tell me what stuff means and something means.” Cannot help evade a cute curious face, I said, “I am working on Neural Network.” Before I finish the statement, “Papa, What is a Meural Metark?” I gave up my stubbornness of avoiding her.
+“Neural Network is a collection (a network) of neurons whose job is to learn a new thing or a new place or a new process or a new concept.”
+Asked her to draw a dog out of it.
+I said, “Good Job!” and asked her, “Where’s the tail, baby?” She smiled and drew a tail.
+After all, neural network inside our brain helps us to learn new things in our life.
+Lion!” and made “Grrrrrrrrr!!!” I tested her by asking her to try drawing a lion.
+What I was actually doing here was teaching her neural network (brain) the features of a lion like exactly how Machine Learning Engineers would train the machine to learn new features.
+After telling her the features of a lion, asked her “Can you draw these for me?” She happily drew almost a similar figure to that of a dog she drew before.
+Now, we need to know the difference between a dog and a lion.
+A big beard is the main difference between a lion and a dog.
+A dog will have features like face, body, legs, and tail.
+A lion will have features like face, body, legs, tail and a beard.
+Was it a dog or a lion?
+Her neural network got aligned with classifying Dogs and Lions after some training.
+Do you know what is the difference between a lion and a dog?” She said, “Yes.” I said, “This is called Learning.
+How you learnt it is because of Neural Network inside your brain.” Now, a neural network is a collection of neurons that keeps switching on and off based on things you see, feel, hear and think just like switching on light bulb at our home.
+This is lion and so on.’ Every neuron would’ve seen, or heard, or smelled, or tasted certain features.
+When you see a new object, your brain will ask the neurons, ‘Hey, anybody experienced this before?’ The neurons will say, ‘Yes, I have seen this.’ Certain other neurons will say, ‘No, I have not seen this.’ The neurons that have seen this before, will group together and form logical connections from the past and gives us an object from our memory.
+For example, when I showed you a lion picture, your brain asked the neurons who had seen it before.
+The neurons grouped together with features like face, body, legs, tail and a beard forms a lion.
+Once all the features are there, the neurons will send a signal that the picture you are looking at is a lion and not a dog.
+Every neuron will tune itself to pick up certain features like legs, tail, face, beard, and so on.
+Ultimately, the neurons in your brain tell that it is a lion and not a dog.
+In a few milliseconds, your brain identifies whether the picture is a lion or a dog.
+Neurons work together in finding patterns and once a pattern is identified, it signals the brain that it is a thing, place, song, taste, smell and so on.”
+Tanishi: Neurons
+Tanishi: Yes. Me: Tell me what neurons are looking for?
+Tanishi: Features.
+When I ask you to draw a dog, what are the features there?
+Me: Okay, when I ask you to draw a dog, what is the first thing you draw?
+This is also a feature that our neurons are looking for.
+Tanishi: 1,2,3,4.
+Tanishi: Yes. Me: So, for a dog, the features are face, body, legs and tail.
+Do you understand what are the features now for a dog?
+Tanishi: Face, body, legs and tail
+If I ask you to draw a lion, what are the features?
+So, neurons are inside our brain waiting for features.
+Once the features are seen and a logical connection is established, neurons signals your brain that it is a lion.
+Tanishi: Neurons
+All neurons work together like your friends and identify lion and dog.
+Tanishi: Neuron friends
+Neural network is a group of neuron friends identifying lions and dogs.
