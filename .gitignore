@@ -1,0 +1,17 @@
+# 忽略大檔案
+*.zip
+*.mp4
+*.mov
+*.psd
+*.csv
+*.tar
+*.gz
+*.rar
+*.7z
+
+# 忽略系統檔案
+.DS_Store
+
+# 忽略特定大檔案（已從 Git 移除）
+Big Data Tools and Techniques I/Final Report/Group 11 Final Project Report/Group 11 Video.mp4
+DATA VISUALIZATION TECHNIQUES/Practice/Soccer/Import DB/database.sqlite
