@@ -58,11 +58,11 @@ This hands-on program blends computer science, applied mathematics, and business
 ## 📂 Repository Content
 
 This GitHub repo includes:
-- 📝 Course-specific assignments & notes  
-- 💡 Personal insights and learning reflections  
-- 📊 Jupyter Notebooks / Python Scripts / Visualizations  
-- 🧠 ML/DL model implementation examples  
-- 📎 Helpful reference materials & resources
+- Course-specific assignments & notes  
+- Personal insights and learning reflections  
+- Jupyter Notebooks / Python Scripts / Visualizations  
+- ML/DL model implementation examples  
+- Helpful reference materials & resources
 
 > All materials are intended for personal use, peer collaboration, and knowledge sharing.
 
@@ -72,9 +72,9 @@ This GitHub repo includes:
 
 Hi! I’m currently studying **AI Solutions Development** at George Brown College and using this repo to track my learning progress and share with others in the field. Let’s connect!
 
-- 🌐 [Portfolio / Blog](https://appfreelife.com)  
-- 📧 [Email me](mailto:irairappo@gmail.com)  
-- 💼 [LinkedIn](https://www.linkedin.com/in/chia-wei-chang-94060b1a0/) *(update your URL)*
+- [Portfolio / Blog](https://appfreelife.com)  
+- [Email me](mailto:irairappo@gmail.com)  
+- [LinkedIn](https://www.linkedin.com/in/chia-wei-chang-94060b1a0/) *(update your URL)*
 
 ---
 
