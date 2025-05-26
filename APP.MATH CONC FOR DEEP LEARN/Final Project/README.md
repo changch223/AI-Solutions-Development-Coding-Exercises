@@ -15,14 +15,12 @@ This folder contains the Streamlit app and model files for the Calorie Expenditu
 pip install -r requirements.txt
 ```
 
-
 2. Run the Streamlit app:
 ```bash
 streamlit run app.py
 ```
 
-
-6. Interact with the sidebar to input user data and predict calorie expenditure.
+3. Interact with the sidebar to input user data and predict calorie expenditure.
 
 ## Training Reference
 
