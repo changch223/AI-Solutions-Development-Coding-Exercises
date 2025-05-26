@@ -1,0 +1,42 @@
+Calorie Expenditure Prediction System — User Guide
+
+1. Install Required Packages
+-----------------------------
+Open a terminal or command prompt, navigate to your project folder, and run:
+
+pip install -r requirements.txt
+
+
+2. Prepare Model Files
+-----------------------------
+Make sure the following three files are in the same folder as app.py:
+- mlp_final_model.h5
+- scaler.save
+- top_features.save
+
+
+3. Launch the Streamlit App
+-----------------------------
+In your terminal or command prompt, run:
+
+streamlit run app.py
+
+
+4. How to Use
+-----------------------------
+- After running the above command, your terminal will display a local web address (usually http://localhost:8501).
+- Open this address in your web browser to access the prediction interface.
+- Enter your data in the left sidebar, then click the "Predict" button to see the predicted calorie expenditure.
+
+
+5. How to Stop the App
+-----------------------------
+- Go back to the terminal window where Streamlit is running and press Ctrl + C to stop the service.
+
+
+---
+
+Notes:
+- For best compatibility, use Python 3.8–3.10 and TensorFlow 2.10–2.12.
+- If you encounter any errors, double-check that all required files are in place and your environment meets the recommended requirements.
+- For further questions, please contact the developer.
