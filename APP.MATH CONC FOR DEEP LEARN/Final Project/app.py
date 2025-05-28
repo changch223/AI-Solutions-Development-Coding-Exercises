@@ -94,13 +94,13 @@ if st.button('Predict'):
     # Make prediction (model outputs log1p of calories, so use expm1 to invert)
     y_pred = model.predict(X_scaled)
     calorie = np.expm1(y_pred[0][0])
-    st.write(f"### 🔥 Predicted Calorie Expenditure: **{calorie:.2f} kcal**")
+    st.write(f"### 🔥 Predicted Calorie Expenditure: **{calorie:.2f} cal**")
 
     # Show model performance metrics (from training/validation)
     st.write("#### Model Evaluation Metrics (from cross-validation):")
-    st.write("- RMSLE: 0.063")
-    st.write("- MAE: 2.456")
-    st.write("- R²: 0.996")
+    st.write("- RMSLE: 0.0623")
+    st.write("- MAE: 2.528")
+    st.write("- R²: 0.9954")
     st.write("*Scores are based on out-of-fold (OOF) cross-validation on the training set.*")
 
     st.write("#### Classification-style Evaluation (Calories Binned):")
