@@ -1,0 +1,337 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2015.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>932</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>AdventureWorks_Sales_2015.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="OrderDate" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2015.csv" type="V_WString" />
+            <Field name="StockDate" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2015.csv" type="V_WString" />
+            <Field name="OrderNumber" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2015.csv" type="V_WString" />
+            <Field name="ProductKey" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2015.csv" type="V_WString" />
+            <Field name="CustomerKey" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2015.csv" type="V_WString" />
+            <Field name="TerritoryKey" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2015.csv" type="V_WString" />
+            <Field name="OrderLineItem" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2015.csv" type="V_WString" />
+            <Field name="OrderQuantity" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2015.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2016.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>932</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>AdventureWorks_Sales_2016.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="OrderDate" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2016.csv" type="V_WString" />
+            <Field name="StockDate" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2016.csv" type="V_WString" />
+            <Field name="OrderNumber" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2016.csv" type="V_WString" />
+            <Field name="ProductKey" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2016.csv" type="V_WString" />
+            <Field name="CustomerKey" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2016.csv" type="V_WString" />
+            <Field name="TerritoryKey" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2016.csv" type="V_WString" />
+            <Field name="OrderLineItem" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2016.csv" type="V_WString" />
+            <Field name="OrderQuantity" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2016.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2017.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>932</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>AdventureWorks_Sales_2017.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="OrderDate" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2017.csv" type="V_WString" />
+            <Field name="StockDate" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2017.csv" type="V_WString" />
+            <Field name="OrderNumber" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2017.csv" type="V_WString" />
+            <Field name="ProductKey" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2017.csv" type="V_WString" />
+            <Field name="CustomerKey" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2017.csv" type="V_WString" />
+            <Field name="TerritoryKey" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2017.csv" type="V_WString" />
+            <Field name="OrderLineItem" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2017.csv" type="V_WString" />
+            <Field name="OrderQuantity" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Sales_2017.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="270" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="306" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Customers.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>932</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>AdventureWorks_Customers.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CustomerKey" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Customers.csv" type="V_WString" />
+            <Field name="Prefix" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Customers.csv" type="V_WString" />
+            <Field name="FirstName" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Customers.csv" type="V_WString" />
+            <Field name="LastName" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Customers.csv" type="V_WString" />
+            <Field name="BirthDate" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Customers.csv" type="V_WString" />
+            <Field name="MaritalStatus" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Customers.csv" type="V_WString" />
+            <Field name="Gender" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Customers.csv" type="V_WString" />
+            <Field name="EmailAddress" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Customers.csv" type="V_WString" />
+            <Field name="AnnualIncome" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Customers.csv" type="V_WString" />
+            <Field name="TotalChildren" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Customers.csv" type="V_WString" />
+            <Field name="EducationLevel" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Customers.csv" type="V_WString" />
+            <Field name="Occupation" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Customers.csv" type="V_WString" />
+            <Field name="HomeOwner" size="254" source="File: C:\Users\wayne\AI-Solutions-Development-Coding-Exercises\BIG DATA TOOLS AND TECHNOLOGIES II\archive\AdventureWorks_Customers.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="402" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="CustomerKey" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="CustomerKey" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_CustomerKey" selected="True" rename="Right_CustomerKey" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="498" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\wayne\AppData\Local\Temp\Alteryx\Engine_38828_54015cf3c1664119a6de64908deb1b20_\Engine_38828_2b779670b12147bca3179885e49c190b~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>プロファイル</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection name="#1">
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="12" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Join" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="932" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>新しいワークフロー1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="6ce63bfa-eb15-43e0-84f1-284d5c8bfa35" />
+      <Telemetry>
+        <PreviousWorkflowId value="321605de-5ad3-4440-adee-94231a86f96a" />
+        <OriginWorkflowId value="321605de-5ad3-4440-adee-94231a86f96a" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
