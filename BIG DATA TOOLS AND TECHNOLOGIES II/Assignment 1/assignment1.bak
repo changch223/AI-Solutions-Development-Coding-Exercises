@@ -1,0 +1,541 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="114" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File />
+          <FormatSpecificOptions UseDcm="true" Format="23" RecordLimit="">
+            <SingleRowFetch>False</SingleRowFetch>
+            <Query>select * 
+from [AdventureWorksDW2022].[dbo].[FactInternetSales]</Query>
+            <TableStyle>Quoted</TableStyle>
+            <CacheData>False</CacheData>
+            <Table />
+            <SessionReadOnly>True</SessionReadOnly>
+            <ReadUncommitted>False</ReadUncommitted>
+            <Connection DcmType="ConnectionId">a46cff68-d7eb-4077-92c3-71aaa662f3bd</Connection>
+            <NoProgress>True</NoProgress>
+            <PostSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dcm:Microsoft SQL Server ODBC
+Query=select * 
+from [AdventureWo...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="Int32" />
+            <Field name="OrderDateKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="Int32" />
+            <Field name="DueDateKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="Int32" />
+            <Field name="ShipDateKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="Int32" />
+            <Field name="CustomerKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="Int32" />
+            <Field name="PromotionKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="Int32" />
+            <Field name="CurrencyKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="Int32" />
+            <Field name="SalesTerritoryKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="Int32" />
+            <Field name="SalesOrderNumber" size="20" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="V_WString" />
+            <Field name="SalesOrderLineNumber" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="Int16" />
+            <Field name="RevisionNumber" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="Int16" />
+            <Field name="OrderQuantity" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="Int16" />
+            <Field name="UnitPrice" scale="4" size="21" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="FixedDecimal" />
+            <Field name="ExtendedAmount" scale="4" size="21" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="FixedDecimal" />
+            <Field name="UnitPriceDiscountPct" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="Double" />
+            <Field name="DiscountAmount" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="Double" />
+            <Field name="ProductStandardCost" scale="4" size="21" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="FixedDecimal" />
+            <Field name="TotalProductCost" scale="4" size="21" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="FixedDecimal" />
+            <Field name="SalesAmount" scale="4" size="21" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="FixedDecimal" />
+            <Field name="TaxAmt" scale="4" size="21" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="FixedDecimal" />
+            <Field name="Freight" scale="4" size="21" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="FixedDecimal" />
+            <Field name="CarrierTrackingNumber" size="25" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="V_WString" />
+            <Field name="CustomerPONumber" size="25" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="V_WString" />
+            <Field name="OrderDate" size="19" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="DateTime" />
+            <Field name="DueDate" size="19" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="DateTime" />
+            <Field name="ShipDate" size="19" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactInternetSales]" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File />
+          <FormatSpecificOptions UseDcm="true" Format="23" RecordLimit="">
+            <SingleRowFetch>False</SingleRowFetch>
+            <Query>select * 
+from [AdventureWorksDW2022].[dbo].[DimCustomer]</Query>
+            <TableStyle>Quoted</TableStyle>
+            <CacheData>False</CacheData>
+            <Table />
+            <SessionReadOnly>True</SessionReadOnly>
+            <ReadUncommitted>False</ReadUncommitted>
+            <Connection DcmType="ConnectionId">a46cff68-d7eb-4077-92c3-71aaa662f3bd</Connection>
+            <NoProgress>True</NoProgress>
+            <PostSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dcm:Microsoft SQL Server ODBC
+Query=select * 
+from [AdventureWo...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CustomerKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="Int32" />
+            <Field name="GeographyKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="Int32" />
+            <Field name="CustomerAlternateKey" size="15" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="V_WString" />
+            <Field name="Title" size="8" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="V_WString" />
+            <Field name="FirstName" size="50" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="V_WString" />
+            <Field name="MiddleName" size="50" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="V_WString" />
+            <Field name="LastName" size="50" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="V_WString" />
+            <Field name="NameStyle" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="Bool" />
+            <Field name="BirthDate" size="10" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="V_WString" />
+            <Field name="MaritalStatus" size="1" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="WString" />
+            <Field name="Suffix" size="10" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="V_WString" />
+            <Field name="Gender" size="1" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="V_WString" />
+            <Field name="EmailAddress" size="50" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="V_WString" />
+            <Field name="YearlyIncome" scale="4" size="21" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="FixedDecimal" />
+            <Field name="TotalChildren" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="Int16" />
+            <Field name="NumberChildrenAtHome" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="Int16" />
+            <Field name="EnglishEducation" size="40" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="V_WString" />
+            <Field name="SpanishEducation" size="40" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="V_WString" />
+            <Field name="FrenchEducation" size="40" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="V_WString" />
+            <Field name="EnglishOccupation" size="100" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="V_WString" />
+            <Field name="SpanishOccupation" size="100" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="V_WString" />
+            <Field name="FrenchOccupation" size="100" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="V_WString" />
+            <Field name="HouseOwnerFlag" size="1" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="WString" />
+            <Field name="NumberCarsOwned" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="Int16" />
+            <Field name="AddressLine1" size="120" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="V_WString" />
+            <Field name="AddressLine2" size="120" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="V_WString" />
+            <Field name="Phone" size="20" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="V_WString" />
+            <Field name="DateFirstPurchase" size="10" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="V_WString" />
+            <Field name="CommuteDistance" size="15" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimCustomer]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File />
+          <FormatSpecificOptions UseDcm="true" Format="23" RecordLimit="">
+            <SingleRowFetch>False</SingleRowFetch>
+            <Query>select * 
+from [AdventureWorksDW2022].[dbo].[DimProduct]</Query>
+            <TableStyle>Quoted</TableStyle>
+            <CacheData>False</CacheData>
+            <Table />
+            <SessionReadOnly>True</SessionReadOnly>
+            <ReadUncommitted>False</ReadUncommitted>
+            <Connection DcmType="ConnectionId">a46cff68-d7eb-4077-92c3-71aaa662f3bd</Connection>
+            <NoProgress>True</NoProgress>
+            <PostSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dcm:Microsoft SQL Server ODBC
+Query=select * 
+from [AdventureWo...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="Int32" />
+            <Field name="ProductAlternateKey" size="25" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="V_WString" />
+            <Field name="ProductSubcategoryKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="Int32" />
+            <Field name="WeightUnitMeasureCode" size="3" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="WString" />
+            <Field name="SizeUnitMeasureCode" size="3" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="WString" />
+            <Field name="EnglishProductName" size="50" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="V_WString" />
+            <Field name="SpanishProductName" size="50" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="V_WString" />
+            <Field name="FrenchProductName" size="50" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="V_WString" />
+            <Field name="StandardCost" scale="4" size="21" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="FixedDecimal" />
+            <Field name="FinishedGoodsFlag" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="Bool" />
+            <Field name="Color" size="15" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="V_WString" />
+            <Field name="SafetyStockLevel" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="Int16" />
+            <Field name="ReorderPoint" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="Int16" />
+            <Field name="ListPrice" scale="4" size="21" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="FixedDecimal" />
+            <Field name="Size" size="50" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="V_WString" />
+            <Field name="SizeRange" size="50" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="V_WString" />
+            <Field name="Weight" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="Double" />
+            <Field name="DaysToManufacture" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="Int32" />
+            <Field name="ProductLine" size="2" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="WString" />
+            <Field name="DealerPrice" scale="4" size="21" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="FixedDecimal" />
+            <Field name="Class" size="2" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="WString" />
+            <Field name="Style" size="2" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="WString" />
+            <Field name="ModelName" size="50" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="V_WString" />
+            <Field name="LargePhoto" size="2147483647" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="Blob" />
+            <Field name="EnglishDescription" size="400" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="V_WString" />
+            <Field name="FrenchDescription" size="400" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="V_WString" />
+            <Field name="ChineseDescription" size="400" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="V_WString" />
+            <Field name="ArabicDescription" size="400" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="V_WString" />
+            <Field name="HebrewDescription" size="400" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="V_WString" />
+            <Field name="ThaiDescription" size="400" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="V_WString" />
+            <Field name="GermanDescription" size="400" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="V_WString" />
+            <Field name="JapaneseDescription" size="400" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="V_WString" />
+            <Field name="TurkishDescription" size="400" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="V_WString" />
+            <Field name="StartDate" size="19" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="DateTime" />
+            <Field name="EndDate" size="19" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="DateTime" />
+            <Field name="Status" size="7" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimProduct]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File />
+          <FormatSpecificOptions UseDcm="true" Format="23" RecordLimit="">
+            <SingleRowFetch>False</SingleRowFetch>
+            <Query>select * 
+from [AdventureWorksDW2022].[dbo].[DimDate]</Query>
+            <TableStyle>Quoted</TableStyle>
+            <CacheData>False</CacheData>
+            <Table />
+            <SessionReadOnly>True</SessionReadOnly>
+            <ReadUncommitted>False</ReadUncommitted>
+            <Connection DcmType="ConnectionId">a46cff68-d7eb-4077-92c3-71aaa662f3bd</Connection>
+            <NoProgress>True</NoProgress>
+            <PostSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dcm:Microsoft SQL Server ODBC
+Query=select * 
+from [AdventureWo...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DateKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimDate]" type="Int32" />
+            <Field name="FullDateAlternateKey" size="10" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimDate]" type="V_WString" />
+            <Field name="DayNumberOfWeek" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimDate]" type="Int16" />
+            <Field name="EnglishDayNameOfWeek" size="10" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimDate]" type="V_WString" />
+            <Field name="SpanishDayNameOfWeek" size="10" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimDate]" type="V_WString" />
+            <Field name="FrenchDayNameOfWeek" size="10" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimDate]" type="V_WString" />
+            <Field name="DayNumberOfMonth" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimDate]" type="Int16" />
+            <Field name="DayNumberOfYear" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimDate]" type="Int16" />
+            <Field name="WeekNumberOfYear" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimDate]" type="Int16" />
+            <Field name="EnglishMonthName" size="10" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimDate]" type="V_WString" />
+            <Field name="SpanishMonthName" size="10" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimDate]" type="V_WString" />
+            <Field name="FrenchMonthName" size="10" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimDate]" type="V_WString" />
+            <Field name="MonthNumberOfYear" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimDate]" type="Int16" />
+            <Field name="CalendarQuarter" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimDate]" type="Int16" />
+            <Field name="CalendarYear" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimDate]" type="Int16" />
+            <Field name="CalendarSemester" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimDate]" type="Int16" />
+            <Field name="FiscalQuarter" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimDate]" type="Int16" />
+            <Field name="FiscalYear" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimDate]" type="Int16" />
+            <Field name="FiscalSemester" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimDate]" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File />
+          <FormatSpecificOptions UseDcm="true" Format="23" RecordLimit="">
+            <SingleRowFetch>False</SingleRowFetch>
+            <Query>select * 
+from [AdventureWorksDW2022].[dbo].[DimGeography]</Query>
+            <TableStyle>Quoted</TableStyle>
+            <CacheData>False</CacheData>
+            <Table />
+            <SessionReadOnly>True</SessionReadOnly>
+            <ReadUncommitted>False</ReadUncommitted>
+            <Connection DcmType="ConnectionId">a46cff68-d7eb-4077-92c3-71aaa662f3bd</Connection>
+            <NoProgress>True</NoProgress>
+            <PostSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dcm:Microsoft SQL Server ODBC
+Query=select * 
+from [AdventureWo...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="GeographyKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimGeography]" type="Int32" />
+            <Field name="City" size="30" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimGeography]" type="V_WString" />
+            <Field name="StateProvinceCode" size="3" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimGeography]" type="V_WString" />
+            <Field name="StateProvinceName" size="50" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimGeography]" type="V_WString" />
+            <Field name="CountryRegionCode" size="3" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimGeography]" type="V_WString" />
+            <Field name="EnglishCountryRegionName" size="50" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimGeography]" type="V_WString" />
+            <Field name="SpanishCountryRegionName" size="50" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimGeography]" type="V_WString" />
+            <Field name="FrenchCountryRegionName" size="50" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimGeography]" type="V_WString" />
+            <Field name="PostalCode" size="15" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimGeography]" type="V_WString" />
+            <Field name="SalesTerritoryKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimGeography]" type="Int32" />
+            <Field name="IpAddressLocator" size="15" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[DimGeography]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File />
+          <FormatSpecificOptions UseDcm="true" Format="23" RecordLimit="">
+            <SingleRowFetch>False</SingleRowFetch>
+            <Query>select * 
+from [AdventureWorksDW2022].[dbo].[FactResellerSales]</Query>
+            <TableStyle>Quoted</TableStyle>
+            <CacheData>False</CacheData>
+            <Table />
+            <SessionReadOnly>True</SessionReadOnly>
+            <ReadUncommitted>False</ReadUncommitted>
+            <Connection DcmType="ConnectionId">a46cff68-d7eb-4077-92c3-71aaa662f3bd</Connection>
+            <NoProgress>True</NoProgress>
+            <PostSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dcm:Microsoft SQL Server ODBC
+Query=select * 
+from [AdventureWo...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="Int32" />
+            <Field name="OrderDateKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="Int32" />
+            <Field name="DueDateKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="Int32" />
+            <Field name="ShipDateKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="Int32" />
+            <Field name="ResellerKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="Int32" />
+            <Field name="EmployeeKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="Int32" />
+            <Field name="PromotionKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="Int32" />
+            <Field name="CurrencyKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="Int32" />
+            <Field name="SalesTerritoryKey" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="Int32" />
+            <Field name="SalesOrderNumber" size="20" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="V_WString" />
+            <Field name="SalesOrderLineNumber" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="Int16" />
+            <Field name="RevisionNumber" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="Int16" />
+            <Field name="OrderQuantity" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="Int16" />
+            <Field name="UnitPrice" scale="4" size="21" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="FixedDecimal" />
+            <Field name="ExtendedAmount" scale="4" size="21" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="FixedDecimal" />
+            <Field name="UnitPriceDiscountPct" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="Double" />
+            <Field name="DiscountAmount" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="Double" />
+            <Field name="ProductStandardCost" scale="4" size="21" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="FixedDecimal" />
+            <Field name="TotalProductCost" scale="4" size="21" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="FixedDecimal" />
+            <Field name="SalesAmount" scale="4" size="21" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="FixedDecimal" />
+            <Field name="TaxAmt" scale="4" size="21" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="FixedDecimal" />
+            <Field name="Freight" scale="4" size="21" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="FixedDecimal" />
+            <Field name="CarrierTrackingNumber" size="25" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="V_WString" />
+            <Field name="CustomerPONumber" size="25" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="V_WString" />
+            <Field name="OrderDate" size="19" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="DateTime" />
+            <Field name="DueDate" size="19" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="DateTime" />
+            <Field name="ShipDate" size="19" source="File: select * &#xA;from [AdventureWorksDW2022].[dbo].[FactResellerSales]" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="246" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ProductKey" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ProductKey" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_ProductKey" selected="True" rename="Right_ProductKey" input="Right_" />
+                <SelectField field="Right_OrderDateKey" selected="True" rename="Right_OrderDateKey" input="Right_" />
+                <SelectField field="Right_DueDateKey" selected="True" rename="Right_DueDateKey" input="Right_" />
+                <SelectField field="Right_ShipDateKey" selected="True" rename="Right_ShipDateKey" input="Right_" />
+                <SelectField field="Right_PromotionKey" selected="True" rename="Right_PromotionKey" input="Right_" />
+                <SelectField field="Right_CurrencyKey" selected="True" rename="Right_CurrencyKey" input="Right_" />
+                <SelectField field="Right_SalesTerritoryKey" selected="True" rename="Right_SalesTerritoryKey" input="Right_" />
+                <SelectField field="Right_SalesOrderNumber" selected="True" rename="Right_SalesOrderNumber" input="Right_" />
+                <SelectField field="Right_SalesOrderLineNumber" selected="True" rename="Right_SalesOrderLineNumber" input="Right_" />
+                <SelectField field="Right_RevisionNumber" selected="True" rename="Right_RevisionNumber" input="Right_" />
+                <SelectField field="Right_OrderQuantity" selected="True" rename="Right_OrderQuantity" input="Right_" />
+                <SelectField field="Right_UnitPrice" selected="True" rename="Right_UnitPrice" input="Right_" />
+                <SelectField field="Right_ExtendedAmount" selected="True" rename="Right_ExtendedAmount" input="Right_" />
+                <SelectField field="Right_UnitPriceDiscountPct" selected="True" rename="Right_UnitPriceDiscountPct" input="Right_" />
+                <SelectField field="Right_DiscountAmount" selected="True" rename="Right_DiscountAmount" input="Right_" />
+                <SelectField field="Right_ProductStandardCost" selected="True" rename="Right_ProductStandardCost" input="Right_" />
+                <SelectField field="Right_TotalProductCost" selected="True" rename="Right_TotalProductCost" input="Right_" />
+                <SelectField field="Right_SalesAmount" selected="True" rename="Right_SalesAmount" input="Right_" />
+                <SelectField field="Right_TaxAmt" selected="True" rename="Right_TaxAmt" input="Right_" />
+                <SelectField field="Right_Freight" selected="True" rename="Right_Freight" input="Right_" />
+                <SelectField field="Right_CarrierTrackingNumber" selected="True" rename="Right_CarrierTrackingNumber" input="Right_" />
+                <SelectField field="Right_CustomerPONumber" selected="True" rename="Right_CustomerPONumber" input="Right_" />
+                <SelectField field="Right_OrderDate" selected="True" rename="Right_OrderDate" input="Right_" />
+                <SelectField field="Right_DueDate" selected="True" rename="Right_DueDate" input="Right_" />
+                <SelectField field="Right_ShipDate" selected="True" rename="Right_ShipDate" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="402" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="SalesAmount" action="Sum" rename="Total Sales Amount" />
+            <SummarizeField field="SalesOrderNumber" action="Count" rename="Total Orders" />
+            <SummarizeField field="TotalProductCost" action="Sum" rename="Sum_TotalProductCost" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="486" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Total Sales Amount]-[Total Orders]" field="Profit Margin" size="1073741823" type="V_WString" enabled="true" />
+            <FormulaField expression="[Total Sales Amount]/[Total Orders]" field="Average Order Value" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Profit Margin = [Total Sales Amount]-[Total Orders]
+Average Order Value = [Total...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="11" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Join" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="932" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>assignment1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="bb8d5738-b10a-43b9-9155-bf8efef43f91" />
+      <Telemetry>
+        <PreviousWorkflowId value="3609b067-0b23-4bfd-abba-3f542f10b754" />
+        <OriginWorkflowId value="3609b067-0b23-4bfd-abba-3f542f10b754" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
