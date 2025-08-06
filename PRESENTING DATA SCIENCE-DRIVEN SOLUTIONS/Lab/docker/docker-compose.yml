@@ -1,0 +1,69 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    build:
+      context: ./postgres
+      dockerfile: Dockerfile
+    container_name: lab-postgres
+    environment:
+      POSTGRES_DB: labdb
+      POSTGRES_USER: labuser
+      POSTGRES_PASSWORD: labpass123
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - lab-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U labuser -d labdb"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # FastAPI Application
+  fastapi:
+    build:
+      context: ./fastapi
+      dockerfile: Dockerfile
+    container_name: lab-fastapi
+    environment:
+      DATABASE_URL: postgresql://labuser:labpass123@postgres:5432/labdb
+      PYTHONPATH: /app
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./fastapi/app:/app
+    networks:
+      - lab-network
+    depends_on:
+      postgres:
+        condition: service_healthy
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+  # pgAdmin (optional database management)
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: lab-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@lab.com
+      PGADMIN_DEFAULT_PASSWORD: admin123
+    ports:
+      - "5050:80"
+    networks:
+      - lab-network
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:
+
+networks:
+  lab-network:
+    driver: bridge
+
+
+#Run: docker-compose up --build
